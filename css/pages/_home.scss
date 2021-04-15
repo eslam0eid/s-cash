@@ -1,0 +1,107 @@
+.slide{
+    background-image: url('../img/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    position: relative;
+    background-attachment: fixed;
+    .layout{
+        @include overlay();
+        background: #000;
+        opacity: 0.8;
+    }
+    .contnet{
+        position: inherit;
+        top: 35%;
+        text-align: center;
+        margin: 10px auto;
+        p{
+            color: $WhiteColor;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 42px;
+            span{
+                font-weight: bold;
+            }
+            .vod{
+                color: rgb(207, 29, 29);
+            }
+            .Eti{
+                color: rgb(29, 184, 29);
+            }
+            .Orange{
+                color: orange;
+            }
+            .pay{
+                color: #129BCD;
+            }
+
+        }
+        .btn{
+            margin-top: 25px;
+            background: $mainColor;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 23px;
+            font-size: 18px;
+            font-weight: 500;
+            border: 2px solid $mainColor;
+            margin-right: 15px;
+            @include transition(all 0.3s);
+            &:hover{
+                background: transparent;
+            }
+        }
+    }
+}
+
+.earn-points{
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+    h4{
+        font-size: 30px;
+        font-weight: 600;
+        color: $mainColor;
+        margin-bottom: 25px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+}
+
+.info{
+    position: relative;
+    overflow: hidden;
+    h3{
+        font-size: 25px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: $mainColor;
+    }
+    p{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    ul{
+        list-style-type: square;
+        padding-left: 1rem;
+    }
+
+    .links{
+        ul{
+            list-style: none;
+            padding-left: 1rem;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                a{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

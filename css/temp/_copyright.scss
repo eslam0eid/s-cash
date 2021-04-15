@@ -1,0 +1,15 @@
+.copyright{
+    background-color: #000;
+    position: relative;
+    padding: 14px 5px 5px 5px;
+    p{
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        span{
+            font-weight: bold;
+            color: $mainColor;
+            text-decoration: underline;
+        }
+    }
+}

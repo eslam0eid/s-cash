@@ -1,0 +1,61 @@
+.Redeem{
+    .warn{
+        border: 2px solid $mainColor;
+        padding: 15px;
+        @include prefixer( box-shadow, 2px 2px 7px $mainColor,  webkit moz o ms);
+        i{
+            color: #f00;
+            margin-right: 5px;
+        }
+        span{
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 28px;
+            span{
+                color: $mainColor;
+            }
+        }
+
+    }
+
+    .redeem-card{
+        overflow: hidden;
+        position: relative;
+        border: 2px solid $mainColor;
+        width: 240px;
+        padding: 10px;
+        @include prefixer( border-radius, 10px,  webkit moz o ms);
+        @media #{$maxMobile}{
+            margin: 10px auto;
+        }
+        ul{
+            padding: 0;
+            li{
+                float: left;;
+                img{
+                    display: inline-block;
+                    width: 80px;
+                }
+                span{
+                    font-size: 14px;
+                    margin-left: 10px;
+                    display: block;
+                    font-weight: 500;
+                    &:first-child{
+                        font-size: 16px;
+                    }
+                    &:last-child{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        button{
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}

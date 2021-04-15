@@ -1,0 +1,23 @@
+.terms-section,.privacy-section{
+    background: #f8f8f8;
+    .info{
+        background: $WhiteColor;
+        width: 85%;
+        margin: 50px auto;
+        @include prefixer( box-shadow, 2px 2px 7px $mainColor,  webkit moz o ms);
+        @include prefixer( border-radius, 10px,  webkit moz o ms);
+        border: 2px solid $mainColor;
+        padding: 25px;
+
+        @media #{$maxMobile}{
+            width: 100%;
+        }
+
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.dashboard{
+    .points-box{
+        border: 2px solid #eee;
+        @include prefixer( box-shadow, 2px 2px 7px $mainColor,  webkit moz o ms);
+        text-align: center;
+        padding: 20px;
+        span{
+            color: $mainColor;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+    }
+
+    .companies{
+        width: 70%;
+        @media #{$maxMobile}{
+            width: 100%;
+        }
+        .nav-pills{
+            .nav-item{
+                margin-right: 10px;
+                button{
+                    background-color: transparent;
+                    border: 2px solid $mainColor;
+                }
+                .active{
+                    background: $mainColor;
+                    color: $WhiteColor;
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .adgem-company,.admantum-company,.offertoro-company{
+                    width: 100%;
+                    height: 600px;
+                    iframe{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.btn-send {
+    background: #bd1818;
+    color: $WhiteColor;
+    padding: 10px 25px;
+    border: none;
+    font-weight:bold;
+    font-size: 15px;
+    @include prefixer(border-radius, 5px, webkit moz o ms);
+    @include transition(all 0.3s);
+
+    &:hover{
+      background: #000;
+    }
+    &:focus {
+      outline: none;
+    }
+  }

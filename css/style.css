@@ -1,0 +1,468 @@
+/* helpers file */
+.btn-send {
+  background: #bd1818;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-send:hover {
+  background: #000;
+}
+
+.btn-send:focus {
+  outline: none;
+}
+
+/* helpers file */
+/* templete files */
+/* pages file */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  direction: ltr;
+  padding-top: 78px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.coloriz {
+  color: #d61e1e;
+}
+
+.input-style {
+  width: 350px;
+  padding: 7px 15px;
+  background: #fff;
+  border: 1px solid #00617F;
+  color: #00617F;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 767px) {
+  .input-style {
+    width: 100%;
+  }
+}
+
+.input-style:focus {
+  -webkit-box-shadow: 0px 0px 3px #00617F;
+  -o-box-shadow: 0px 0px 3px #00617F;
+  -ms-box-shadow: 0px 0px 3px #00617F;
+  box-shadow: 0px 0px 3px #00617F;
+  outline: none;
+  border: 1px solid #00617F;
+}
+
+.form-group {
+  margin: 30px 0;
+}
+
+.slide {
+  background-image: url("../img/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.slide .layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+}
+
+.slide .contnet {
+  position: inherit;
+  top: 35%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.slide .contnet p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 42px;
+}
+
+.slide .contnet p span {
+  font-weight: bold;
+}
+
+.slide .contnet p .vod {
+  color: #cf1d1d;
+}
+
+.slide .contnet p .Eti {
+  color: #1db81d;
+}
+
+.slide .contnet p .Orange {
+  color: orange;
+}
+
+.slide .contnet p .pay {
+  color: #129BCD;
+}
+
+.slide .contnet .btn {
+  margin-top: 25px;
+  background: #00617F;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 23px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #00617F;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slide .contnet .btn:hover {
+  background: transparent;
+}
+
+.earn-points {
+  overflow: hidden;
+}
+
+.earn-points img {
+  width: 100%;
+}
+
+.earn-points h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #00617F;
+  margin-bottom: 25px;
+}
+
+.earn-points p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.info {
+  position: relative;
+  overflow: hidden;
+}
+
+.info h3 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #00617F;
+}
+
+.info p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.info ul {
+  list-style-type: square;
+  padding-left: 1rem;
+}
+
+.info .links ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.info .links ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.info .links ul li a {
+  font-size: 30px;
+}
+
+.login-section, .sign-section {
+  text-align: center;
+}
+
+.login-section h2, .sign-section h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #00617F;
+  text-align: center;
+}
+
+.login-section label, .sign-section label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.login-section .note, .sign-section .note {
+  display: block;
+  font-size: 15px;
+  color: #00617F;
+  margin-bottom: 15px;
+}
+
+.login-section button, .sign-section button {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 25px;
+  -webkit-box-shadow: 2px 2px 7px #00617F;
+  -o-box-shadow: 2px 2px 7px #00617F;
+  -ms-box-shadow: 2px 2px 7px #00617F;
+  box-shadow: 2px 2px 7px #00617F;
+}
+
+.login-section button:focus, .sign-section button:focus {
+  outline: none !important;
+}
+
+.login-section hr, .sign-section hr {
+  width: 50%;
+  margin: 20px auto;
+}
+
+@media (max-width: 767px) {
+  .login-section hr, .sign-section hr {
+    width: 100%;
+  }
+}
+
+.login-section p, .sign-section p {
+  font-size: 15px;
+}
+
+.dashboard .points-box {
+  border: 2px solid #eee;
+  -webkit-box-shadow: 2px 2px 7px #00617F;
+  -o-box-shadow: 2px 2px 7px #00617F;
+  -ms-box-shadow: 2px 2px 7px #00617F;
+  box-shadow: 2px 2px 7px #00617F;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard .points-box span {
+  color: #00617F;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.dashboard .points-box p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.dashboard .companies {
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .dashboard .companies {
+    width: 100%;
+  }
+}
+
+.dashboard .companies .nav-pills .nav-item {
+  margin-right: 10px;
+}
+
+.dashboard .companies .nav-pills .nav-item button {
+  background-color: transparent;
+  border: 2px solid #00617F;
+}
+
+.dashboard .companies .nav-pills .nav-item .active {
+  background: #00617F;
+  color: #fff;
+}
+
+.dashboard .companies .tab-content .tab-pane .adgem-company, .dashboard .companies .tab-content .tab-pane .admantum-company, .dashboard .companies .tab-content .tab-pane .offertoro-company {
+  width: 100%;
+  height: 600px;
+}
+
+.dashboard .companies .tab-content .tab-pane .adgem-company iframe, .dashboard .companies .tab-content .tab-pane .admantum-company iframe, .dashboard .companies .tab-content .tab-pane .offertoro-company iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.Redeem .warn {
+  border: 2px solid #00617F;
+  padding: 15px;
+  -webkit-box-shadow: 2px 2px 7px #00617F;
+  -o-box-shadow: 2px 2px 7px #00617F;
+  -ms-box-shadow: 2px 2px 7px #00617F;
+  box-shadow: 2px 2px 7px #00617F;
+}
+
+.Redeem .warn i {
+  color: #f00;
+  margin-right: 5px;
+}
+
+.Redeem .warn span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.Redeem .warn span span {
+  color: #00617F;
+}
+
+.Redeem .redeem-card {
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #00617F;
+  width: 240px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .Redeem .redeem-card {
+    margin: 10px auto;
+  }
+}
+
+.Redeem .redeem-card ul {
+  padding: 0;
+}
+
+.Redeem .redeem-card ul li {
+  float: left;
+}
+
+.Redeem .redeem-card ul li img {
+  display: inline-block;
+  width: 80px;
+}
+
+.Redeem .redeem-card ul li span {
+  font-size: 14px;
+  margin-left: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+.Redeem .redeem-card ul li span:first-child {
+  font-size: 16px;
+}
+
+.Redeem .redeem-card ul li span:last-child {
+  text-align: center;
+}
+
+.Redeem .redeem-card button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.terms-section, .privacy-section {
+  background: #f8f8f8;
+}
+
+.terms-section .info, .privacy-section .info {
+  background: #fff;
+  width: 85%;
+  margin: 50px auto;
+  -webkit-box-shadow: 2px 2px 7px #00617F;
+  -o-box-shadow: 2px 2px 7px #00617F;
+  -ms-box-shadow: 2px 2px 7px #00617F;
+  box-shadow: 2px 2px 7px #00617F;
+  border-radius: 10px;
+  border: 2px solid #00617F;
+  padding: 25px;
+}
+
+@media (max-width: 767px) {
+  .terms-section .info, .privacy-section .info {
+    width: 100%;
+  }
+}
+
+.terms-section .info ul, .privacy-section .info ul {
+  list-style: none;
+}
+
+.terms-section .info ul li, .privacy-section .info ul li {
+  margin-bottom: 40px;
+}
+
+.Navbar {
+  background-color: #00617F;
+  padding: 0;
+}
+
+.Navbar .navbar {
+  padding: 0;
+}
+
+.Navbar .navbar .navbar-toggler {
+  background: #fff;
+}
+
+.Navbar .navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Navbar .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #c2c2c2;
+}
+
+.copyright {
+  background-color: #000;
+  position: relative;
+  padding: 14px 5px 5px 5px;
+}
+
+.copyright p {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+
+.copyright p span {
+  font-weight: bold;
+  color: #00617F;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

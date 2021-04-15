@@ -1,0 +1,21 @@
+/* helpers file */
+@import 'helper/var';
+@import 'helper/mixin';
+@import 'helper/button';
+/* helpers file */
+
+
+/* templete files */
+
+/* pages file */
+// @import 'pages/homepage';
+@import 'pages/globalpages';
+@import 'pages/home';
+@import 'pages/login';
+@import 'pages/Dashboard';
+@import 'pages/redeem';
+@import 'pages/terms';
+
+
+@import 'temp/nav';
+@import 'temp/copyright';

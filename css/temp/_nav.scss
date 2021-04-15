@@ -1,0 +1,25 @@
+.Navbar {
+    background-color: $mainColor;
+    padding: 0;
+
+    .navbar {
+        padding: 0;
+
+        .navbar-toggler{
+            background: $WhiteColor;
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $WhiteColor;
+                    font-weight: 600;
+                    font-size: 15px;
+                    @include transition(all 0.3s);
+                    &:hover{
+                        color: rgb(194, 194, 194);
+                    }
+                }
+            }
+        }
+    }
+}
